@@ -96,6 +96,10 @@ Set a new umask:
 ```bash
 umask 022  # Default: 755 for directories, 644 for files
 ```
+## Command to execute script :
+chmod +x myscript.sh
+## Command to make a script read-write-executable :
+chmod 777 myscript.sh
 
 ## Conclusion
 Understanding file permissions is essential for system security and proper file management. Using `chmod`, `chown`, and `chgrp`, you can control access to files and directories efficiently.
