@@ -23,6 +23,21 @@ Managing disks and storage efficiently is crucial for system performance and sta
 - `umount /mnt` – Unmount a partition
 - `mount -o remount,rw /mnt` – Remount a partition as read-write
 
+- ### Creating directory in mnt :
+- mkdir -p/mnt/demo
+- **Output **
+- drwxr-xr-x. 2 root root  4096 May 26 10:54 demo
+# Command for formating #
+   mkfs -t ext4 /dev/sdd
+
+# Command for mount #
+
+  mount /dev/sdd /mnt/demo
+
+
+  
+
+
 ### Logical Volume Management (LVM)
 - `pvcreate /dev/sdX` – Create a physical volume
 - `vgcreate vg_name /dev/sdX` – Create a volume group
