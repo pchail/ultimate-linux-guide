@@ -12,6 +12,10 @@ Managing disks and storage efficiently is crucial for system performance and sta
 - `df -h` – Check disk space usage
 - `du -sh /path` – Show size of a directory
 
+  ### To extend the root directory ###
+   vgs : to check the root (regarding how much free space is there )
+   lvextend -L +100M <filesystem> -r
+
 ### Partition Management
 - `fdisk /dev/sdX` – Create and manage partitions
 - `parted /dev/sdX` – Alternative to `fdisk` for GPT disks
