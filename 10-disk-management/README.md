@@ -13,8 +13,8 @@ Managing disks and storage efficiently is crucial for system performance and sta
 - `du -sh /path` – Show size of a directory
 
   ### To extend the root directory ###
-   vgs : to check the root (regarding how much free space is there )
-   lvextend -L +100M <filesystem> -r
+ -  vgs : is used to display information about volume groups (VGs)
+ - lvextend -L +100M <filesystem> -r
 
 ### Partition Management
 - `fdisk /dev/sdX` – Create and manage partitions
